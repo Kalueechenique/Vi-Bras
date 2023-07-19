@@ -45,17 +45,11 @@ body{
     color:white;
 }
 
-
 #p2{
     display: flex;
     text-align: center;
     color:white;
 }
-
-/* header{
-    height: 20vh;
-    background-color: rgb(255, 255, 255);
-} */
 
 #sobrenosotrosheader{
     background-color: #000000;
@@ -94,12 +88,6 @@ main{
     grid-template-areas: 
     "sect1 sect2 sect3";
 }
-
-/* #p1{
-    display: flex;
-    text-align: center;
-    color:white;
-} */
 
 #nosotrosimg{
     height: 57vh;
@@ -184,44 +172,11 @@ main{
     height: 255vh;
 }
 
-/* #unidad1{
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-}
-
-#unidad2{
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-}
-
-#unidad3{
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-}
-
-#unidad4{
-    background-color: rgb(255, 255, 255);
-    height: 100%;
-}
-
-#newtemporada{
-    background-color: rgb(160, 108, 31);
-    height: 100vh;
-} */
-
-/* #descuentos{
-    background-color: rgb(255, 255, 255);
-    height: auto;
-} */
 
 #logocontactos{
     height: 10vh;
     background-color: black;
 }
-
-/* #contactos{
-    background-color: rgb(255, 255, 255);
-} */
 
 footer{
     background-color: rgb(255, 255, 255);
