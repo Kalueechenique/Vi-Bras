@@ -16,10 +16,10 @@
     height: 4.5vh;
 }
 
-body{
+/* body{
     height: 100vh;
     background-color: rgb(255, 255, 255);
-}
+} */
 
 #sobrenosotrosbody{
     height: 100vh;
@@ -67,14 +67,13 @@ body{
     height: 15vh;
 }
 
-#seccion1{
+/* #seccion1{
     background-color: rgb(0, 0, 0);
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: #009EEE;
-}
-
+} */
 
 main{
     background-color: rgb(255, 255, 255);
@@ -96,12 +95,12 @@ main{
     
 }
 
-.image {
+/* .image {
     display: block;
     max-width: 100%;
     max-height: 100%;
     margin: 0 auto;
-  }
+  } */
 
 #p3{
     display: flex;
@@ -137,7 +136,7 @@ main{
     grid-area: sect3;
 }
 
-#portadaa{
+#portada{
     height: 100%;
     width: 100%;
 }
@@ -151,9 +150,25 @@ main{
     height: 100vh;
 }
 
-#main2{
+#mainNew{
     background-color: rgb(255, 255, 255);
-    height: 120vh;
+    height: 75vh;
+}
+
+#mainCalzado{
+    height: 80vh;
+}
+
+#mainDeSuperior{
+    height: 190vh;
+}
+
+#mainInferiores{
+    height: 75vh;
+}
+
+#mainAccesorios{
+    height: 75vh;
 }
 
 #sobrenosotrosmain{
@@ -167,21 +182,29 @@ main{
     background-color: rgb(255, 255, 255);
 }
 
-#section1{
-    background-color: rgb(255, 255, 255);
-    height: 255vh;
+#hot{
+    height: 92vh;
+    background-color: #ffffff;
 }
 
+/* #section1{
+    background-color: rgb(255, 255, 255);
+    height: 255vh;
+} */
 
 #logocontactos{
     height: 10vh;
     background-color: black;
 }
 
-footer{
+#red1{
+    height: 22vh;
+}
+
+/* footer{
     background-color: rgb(255, 255, 255);
     height: auto;
-}
+} */
 
 #sobrenosotrosfooter{
     background-color: #000000;
