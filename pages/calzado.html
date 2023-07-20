@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -10,9 +9,21 @@
     crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <title>Calzados</title>
+    <style>
+      .zoom-img {
+        transition: transform 0.3s;
+      }
+      .zoom-img:hover {
+        transform: scale(1.03);
+      }
+    </style>
 </head>
+
 <body>
+
     <header class="container-fluid fixed-top">
+
+        <!-- Incio Descuentos -->
         <div class="fixed-top">
          <div id="cabecera" class="row bg-secondary ">
              <div id="envios" class="col d-flex justify-content-evenly fs-5">
@@ -22,121 +33,102 @@
                  <p>Hasta 6 cuotas sin interes. <img id="imgdescuentos" src="../assets/img/items/Captura de pantalla 2023-07-04 153702.png" alt=""></p>
              </div>
          </div>
+         <!-- Final Descuentos -->
+
+         <!-- Incio NavBar -->
          <div class="row">
              <div id="logo" class="col-xl-1" >
                  <a href="../index.html"><img id="imglogo" src="../assets/img/logo/Captura de pantalla 2023-07-04 151646.png" alt="" ></a>
              </div>
              <nav class=" col navbar navbar-expand-lg bg-body-tertiary">
                  <div class="container-fluid">
-                   <a class="navbar-brand" href="../pages/new.html">New</a>
+                   <a class="navbar-brand" href="./new.html">New</a>
                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                      <span class="navbar-toggler-icon"></span>
                    </button>
                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
                      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                         <a class="nav-link" href="../pages/calzado.html">Calzado</a>
+                         <a class="nav-link" href="../calzado.html">Calzado</a>
                      </li>
                        <li class="nav-item dropdown">
                          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                            Shop
                          </a>
                          <ul class="dropdown-menu">
-                           <li><a class="dropdown-item" href="../pages/superiores.html">Superiores</a></li>
-                           <li><a class="dropdown-item" href="../pages/inferiores.html">Inferiores</a></li>
+                           <li><a class="dropdown-item" href="./superiores.html">Superiores</a></li>
+                           <li><a class="dropdown-item" href="./inferiores.html">Inferiores</a></li>
                          </ul>
                          
                        <li class="nav-item">
-                         <a class="nav-link" href="../pages/accesorios.html">Accesorios</a>
+                         <a class="nav-link" href="./accesorios.html">Accesorios</a>
                        </li>
                        <li class="nav-item">
                              <a class="nav-link" href="#final">Help</a>
                            </li class>
                            <li class="nav-item">
-                            <a class="nav-link" href="../pages/carrito.html">Carrito</a>
+                            <a class="nav-link" href="./carrito.html">Carrito</a>
                           </li class>
                      </ul>
-                     <form class="d-flex" role="search">
-                       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                       <button class="btn btn-outline-success" type="submit">Search</button>
-                     </form>
                    </div>
                  </div>
                </nav>
-         
          </div>
         </div>
-    </header>
+         <!-- Final NavBar -->
 
-    <div id="divisor"></div>
-    <br>
-    <h3><small class="text-body-secondary d d-flex justify-content-center">Calzado</small></h3>
-    <main>
-        <section class="container-fluid">
+
+     </header>
+
+    <div id="divisor"></div><br>
+    <br> 
+
+
+         <!-- Incio Clazado -->
+         <h3><small class="text-body-secondary d d-flex justify-content-center">Calzado</small></h3> <br>
+         <main id="mainCalzado">
+          <section class="container">
             <div class="row">
-                <div class=" col-xl-1 col-md-2">
-                    <h5 class="d-flex justify-content-center">Talles:</h5>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          35 - 37
-                        </label>
-                      </div> <br>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          37 - 39
-                        </label>
-                      </div> <br>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          39 - 41
-                        </label>
-                      </div> <br>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
-                        <label class="form-check-label" for="flexRadioDefault1">
-                          41 - 43
-                        </label>
-                      </div> <br>
-                      <div class="form-check">
-                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
-                        <label class="form-check-label" for="flexRadioDefault2">
-                          43 -45
-                        </label>
-                      </div>
-                </div>
-                <div class="col col-md-5">
-                    <div id="carouselExampleFade1" class="carousel slide carousel-fade">
+                <div class="col ">
+                    <div id="carouselExampleFade1" class="carousel slide carousel-fade img-fluid zoom-img">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="../assets/img/calzado/paul-volkmer-updW-QUccFE-unsplash.jpg" class="d-block w-100" alt="...">
+                            <img src="../assets/img/Calzado/327246-800-800.jpg" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="../assets/img/calzado/taylor-smith-aDZ5YIuedQg-unsplash.jpg" class="d-block w-100" alt="...">
+                            <img src="../assets/img/Calzado/327249-800-800.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../assets/img/Calzado/553558_075_H_PREM.jpg" class="d-block w-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Previous</span>
                         </button>
-                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade11¿" data-bs-slide="next">
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade1" data-bs-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
-                        <h4>Lorem, sad ipsum.</h4>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                     <h6>$00.000</h6>
+                        <h6 class="lead">Air Jordan 1 Low</h6>
+                <h6 class="fw-bold">$69.999</h6>
+                <p class="text-danger small"><strong>6 cuotas sin interes de $11.666,50</strong></p>
+                <div class="btn-group d-flex justify-content-center">
+                   <a href="#" class="btn btn-dark active" aria-current="page">Comprar</a>
+                   <a href="#" class="btn btn-dark">Ver</a>
+                 </div>
                       </div>
                 </div>
-                <div class="col col-md-5">
-                    <div id="carouselExampleFade2" class="carousel slide carousel-fade">
+                <div class="col ">
+                    <div id="carouselExampleFade2" class="carousel slide carousel-fade img-fluid zoom-img">
                         <div class="carousel-inner">
                           <div class="carousel-item active">
-                            <img src="../assets/img/calzado/mnz-g3C5qZhNzQg-unsplash.jpg" class="d-block w-100" alt="...">
+                            <img src="../assets/img/Calzado/550805-800-800.jpg" class="d-block w-100" alt="...">
                           </div>
                           <div class="carousel-item">
-                            <img src="../assets/img/calzado/mitchel-lensink-1BI-ar91C7U-unsplash.jpg" class="d-block w-100" alt="...">
+                            <img src="../assets/img/Calzado/544716-800-800.jpg" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="carousel-item">
+                            <img src="../assets/img/Calzado/568201-800-800.jpg" class="d-block w-100" alt="...">
                           </div>
                         </div>
                         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
@@ -147,77 +139,137 @@
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
                           <span class="visually-hidden">Next</span>
                         </button>
-                        <h4>Lorem, sad ipsum.</h4>
-                     <p>Lorem ipsum dolor sit amet.</p>
-                     <h6>$00.000</h6>
+                        <h6 class="lead">Air Jordan 1 Mid SE</h6>
+                <h6 class="fw-bold">$77.999</h6>
+                <p class="text-danger small"><strong>6 cuotas sin interes de $19.333,19</strong></p>
+                <div class="btn-group d-flex justify-content-center">
+                   <a href="#" class="btn btn-dark active" aria-current="page">Comprar</a>
+                   <a href="#" class="btn btn-dark">Ver</a>
+                 </div>
                       </div>
                 </div>
+                <div class="col ">
+                  <div id="carouselExampleFade3" class="carousel slide carousel-fade img-fluid zoom-img">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active">
+                          <img src="../assets/img/Calzado/540133-800-800.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../assets/img/Calzado/546189-800-800.jpg" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                          <img src="../assets/img/Calzado/564843-800-800.jpg" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade3" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                      <h6 class="lead">Air Jordan 1 Low</h6>
+                <h6 class="fw-bold">$69.999</h6>
+                <p class="text-danger small"><strong>6 cuotas sin interes de $11.666,50</strong></p>
+                <div class="btn-group d-flex justify-content-center">
+                   <a href="#" class="btn btn-dark active" aria-current="page">Comprar</a>
+                   <a href="#" class="btn btn-dark">Ver</a>
+                 </div>
+                    </div>
+              </div>
             </div>
-        </section>
-    </main>
-    <div class="container-fluid">
-        <p class="bg-black">
-            <a href="../index.html"><img id="logocontactos" src="../assets/img/logo/Captura de pantalla 2023-07-04 151646.png" alt=""></a>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem consequatur officia fuga fugiat tempora f.
+          </section>
+        </main>
+         <!-- Final Calzado -->
+
+     
+         <!-- Inicion Informacion -->
+     <div class="container-fluid">
+      <div class="row">
+                <p class="bg-black ">
+            <a href="./index.html"><img id="logocontactos" src="../assets/img/logo/Captura de pantalla 2023-07-04 151646.png" alt=""></a>
+            "The Vi-Bras": ¡Viste con estilo y vive vibrante! Descubre moda única y prendas que reflejen tu personalidad. Unete a nuestra comunidad. 
         </p> 
+      </div>
     </div>
+         <!-- Final Informacion-->
+
+
+         <!-- Incio Redes Sociales -->
+         <section class="container">
+          <div class="row ">
+            <div class="col img-fluid zoom-img">
+              <a href="https://twitter.com/home"><img id="red1" src="../assets/img/Redes/Diseño sin título (1).jpg" alt=""></a>
+            </div>
+            <div class="col img-fluid zoom-img">
+              <a href="https://www.youtube.com/"><img id="red1" src="../assets/img/Redes/Diseño sin título (2).jpg" alt=""></a>
+            </div>
+            <div class="col img-fluid zoom-img">
+              <a href="https://www.facebook.com/"><img id="red1" src="../assets/img/Redes/Diseño sin título (3).jpg" alt=""></a>
+            </div>
+            <div class="col img-fluid zoom-img">
+              <a href="https://www.instagram.com/"><img id="red1" src="../assets/img/Redes/Diseño sin título.jpg" alt=""></a>
+            </div>
+          </div>
+         </section>
+         <!-- Fianl Redes Sociales -->
+
+
+         <br>
+
+
+         <!-- Incio Contenido -->
     <section id="contactos" class="container">
-        <div class="row"><div class="col col-md-3">
+        <div class="row"><div class="col-xl-6 col-md-3">
             <h5>Menú</h5>
                 <div class="d-flex flex-column mb-3 justify-content-end ">
                     <p><a href="./new.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">New</a></p>
                     <p><a href="./superiores.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Shop Sup</a></p>
                     <p><a href="./inferiores.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Shop Inf</a></p>
-                    <p><a href="../pages/accesorios.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Accesorios</a></p>
+                    <p><a href="./accesorios.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Accesorios</a></p>
                     <p><a href="./calzado.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Calzados</a></p>
                     <p><a href="./carrito.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Carrito</a></p>
                     <p><a href="../index.html" class="link-secondary link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Inicio</a></p>
-                    
                 </div>
-
-                </ul>
             </div>
-            <div class="col col-md-9">
+            <div class="col-xl-6 col-md-9">
                 <dl class="row">
                     <a id="final" href=""></a>
-                    <h3 class="d-flex justify-content-center">Contactos</h3>
-                    <dt class="col-sm-3">Description lists</dt>
-                    <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
-                  
-                    <dt class="col-sm-3">Term</dt>
-                    <dd class="col-sm-9">
-                      <p>Definition for the term.</p>
-                      <p>And some more placeholder definition text.</p>
-                    </dd>
-                  
-                    <dt class="col-sm-3">Another term</dt>
-                    <dd class="col-sm-9">This definition is short, so no extra paragraphs or anything.</dd>
-                  
-                    <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
-                    <dd class="col-sm-9">This can be useful when space is tight. Adds an ellipsis at the end.</dd>
-                  
-                    <dt class="col-sm-3">Nesting</dt>
-                    <dd class="col-sm-9">
-                      <dl class="row">
-                        <dt class="col-sm-4">Nested definition list</dt>
-                        <dd class="col-sm-8">I heard you like definition lists. Let me put a definition list inside your definition list.</dd>
-                      </dl>
-                    </dd>
-                  </dl>
+                    <h6 class="blockquote">Contáctanos</h6>
+                    <dt class="col-sm-3">Email</dt>
+                    <dd class="col-sm-9 small">thevibras@gmail.com.ar</dd>
+                    <dt class="col-sm-3">Tel</dt>
+                    <dd class="col-sm-9 small">+54 3552 - 142421</dd>
+                    <dt class="col-sm-3">Direccion</dt>
+                    <dd class="col-sm-9 small">Córdoba Captial, Velez Sarsfield 1035 AR</dd>
+                    <br> 
+                    <p>
+                     © [2023] [The Vi-Bras]. Todos los derechos reservados.
+                    Todas las imágenes, diseños, gráficos, textos y otros contenidos presentes en este sitio web están protegidos por las leyes de derechos de autor. 
+                    Queda estrictamente prohibida la reproducción, distribución, modificación o uso no autorizado de cualquier contenido sin el previo consentimiento por escrito de [Josua Echenique].
+                    Gracias por respetar nuestros derechos de autor y apreciar el trabajo que hemos realizado para ofrecerte una experiencia única en nuestro sitio web.
+                    </p>
             </div>
             
         </div>
     </section>
-<footer>
+         <!-- Final Contenido -->
+
+
+         <!-- Inicio Footer -->
+    <footer>
         <figure class="text-center">
             <blockquote class="blockquote">
               <p>The Vi-Bras - 2023.</p>
             </blockquote>
             <figcaption class="blockquote-footer">
-              Diseñado y desarrollado por  <cite title="Source Title">Josua Echenique</cite>
+                <a href="./sobrenosotros.html " target="_blank">Diseñado y desarrollado por  <cite title="Source Title">Josua Echenique</cite></a>
             </figcaption>
           </figure>
     </footer>
+         <!-- Final Footer -->
+
 
     <script 
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" 
@@ -225,4 +277,5 @@
     crossorigin="anonymous">
     </script>
 </body>
+
 </html>
